@@ -1,3 +1,5 @@
+﻿# MED-DataGrid - A flexible, easy-to-use, efficient .Net Grid component
+
 Thank you for your interest in MED-DataGrid. It is an open-source, .Net Grid Control for Windows Forms.
 
 ```
@@ -17,4 +19,4 @@ The latest version of the parent project is available at http://sourcegrid.codep
 
 During 2011, MEDIT provided access to their fork to Felix Concordia under the terms of the previous MIT-like license, and it was under these terms that Felix Concordia provided the code for public consumption at https://code.google.com/p/meddatagrid under the sponsorship of MEDIT. This code was automatically migrated to GutHub in 2015 to allow for on-going maintenance.
 
-For further licensing and contact details, see license.txt within the source code repository.
+For further licensing and contact details, see LICENSE.md within the source code repository.

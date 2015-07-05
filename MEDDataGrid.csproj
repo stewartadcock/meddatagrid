@@ -1,0 +1,347 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="4.0">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.50727</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{602D7584-6062-4C63-B950-AF6DFB2CC2D0}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Fr.Medit.MedDataGrid</RootNamespace>
+    <AssemblyName>fr.medit.MEDDataGrid</AssemblyName>
+    <SignAssembly>true</SignAssembly>
+    <AssemblyOriginatorKeyFile>MEDSUMO.snk</AssemblyOriginatorKeyFile>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <OldToolsVersion>2.0</OldToolsVersion>
+    <UpgradeBackupLocation />
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <DocumentationFile>bin\Debug\fr.medit.MEDDataGrid.xml</DocumentationFile>
+    <NoWarn>1591</NoWarn>
+    <CheckForOverflowUnderflow>true</CheckForOverflowUnderflow>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\x86\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <CheckForOverflowUnderflow>true</CheckForOverflowUnderflow>
+    <DocumentationFile>bin\Debug\fr.medit.MEDDataGrid.xml</DocumentationFile>
+    <NoWarn>1591</NoWarn>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Optimize>false</Optimize>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <OutputPath>bin\x86\Release\</OutputPath>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x64' ">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\x64\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <CheckForOverflowUnderflow>true</CheckForOverflowUnderflow>
+    <DocumentationFile>bin\Debug\fr.medit.MEDDataGrid.xml</DocumentationFile>
+    <NoWarn>1591</NoWarn>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x64</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Optimize>false</Optimize>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x64' ">
+    <OutputPath>bin\x64\Release\</OutputPath>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x64</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="BehaviorModels\BehaviorModelGroup.cs" />
+    <Compile Include="BehaviorModels\ButtonBehaviorModel.cs" />
+    <Compile Include="BehaviorModels\CheckBoxBehaviorModel.cs" />
+    <Compile Include="BehaviorModels\ColumnHeaderBehaviorModel.cs" />
+    <Compile Include="BehaviorModels\CommonBehaviorModel.cs" />
+    <Compile Include="BehaviorModels\ContextMenuBehaviorModel.cs" />
+    <Compile Include="BehaviorModels\BitmapCellBehaviorModel.cs" />
+    <Compile Include="BehaviorModels\CursorBehaviorModel.cs" />
+    <Compile Include="BehaviorModels\BehaviorModelEvents.cs" />
+    <Compile Include="BehaviorModels\ExpandCellBehaviorModel.cs" />
+    <Compile Include="BehaviorModels\HeaderBehaviorModel.cs" />
+    <Compile Include="BehaviorModels\IBehaviorModel.cs" />
+    <Compile Include="BehaviorModels\ResizeBehaviorModel.cs" />
+    <Compile Include="BehaviorModels\RowHeaderBehaviorModel.cs" />
+    <Compile Include="BehaviorModels\ToolTipTextBehaviorModel.cs" />
+    <Compile Include="BehaviorModels\UnselectableBehaviorModel.cs" />
+    <Compile Include="Cells\ButtonCell.cs" />
+    <Compile Include="Cells\Cell.cs" />
+    <Compile Include="Cells\CellVirtual.cs" />
+    <Compile Include="Cells\CheckBoxCell.cs" />
+    <Compile Include="Cells\CheckBoxStatus.cs" />
+    <Compile Include="Cells\ColumnHeader.cs" />
+    <Compile Include="Cells\ComboBoxCell.cs" />
+    <Compile Include="Cells\BitmapCell.cs" />
+    <Compile Include="Cells\ICellBitmapCell.cs" />
+    <Compile Include="Cells\ExpandCell.cs" />
+    <Compile Include="Cells\HeaderCell.cs" />
+    <Compile Include="Cells\ICell.cs" />
+    <Compile Include="Cells\ICellCheckBox.cs" />
+    <Compile Include="Cells\ICellContextMenu.cs" />
+    <Compile Include="Cells\ICellCursor.cs" />
+    <Compile Include="Cells\ICellSortableHeader.cs" />
+    <Compile Include="Cells\ICellToolTipText.cs" />
+    <Compile Include="Cells\ICellVirtual.cs" />
+    <Compile Include="Cells\IExpandCell.cs" />
+    <Compile Include="Cells\IHeaderCell.cs" />
+    <Compile Include="Cells\LinkCell.cs" />
+    <Compile Include="Cells\RowHeaderCell.cs" />
+    <Compile Include="Cells\SortStatus.cs" />
+    <Compile Include="Common\AlignmentUtility.cs" />
+    <Compile Include="Common\Border.cs" />
+    <Compile Include="Common\ColumnInfo.cs" />
+    <Compile Include="Common\CellValidatingEventArgs.cs" />
+    <Compile Include="Common\ColumnInfoEventArgs.cs" />
+    <Compile Include="Common\PositionKeyEventArgs.cs" />
+    <Compile Include="Common\PositionCancelEventArgs.cs" />
+    <Compile Include="Common\RectangleBorder.cs" />
+    <Compile Include="Common\EditExceptionEventArgs.cs" />
+    <Compile Include="Common\RangeEventArgs.cs" />
+    <Compile Include="Common\IndexRangeEventArgs.cs" />
+    <Compile Include="Common\UserSelectionEventArgs.cs" />
+    <Compile Include="Common\SortRangeRowsEventArgs.cs" />
+    <Compile Include="Common\SelectionChangedEventArgs.cs" />
+    <Compile Include="Common\RowInfoEventArgs.cs" />
+    <Compile Include="Common\PositionEventArgs.cs" />
+    <Compile Include="Common\DisplayStringCellComparer.cs" />
+    <Compile Include="Common\IconUtility.cs" />
+    <Compile Include="Common\InvalidConversionException.cs" />
+    <Compile Include="Common\LinkedControlsList.cs" />
+    <Compile Include="Common\ObjectIsReadOnlyException.cs" />
+    <Compile Include="Common\MEDDataGridException.cs" />
+    <Compile Include="Common\RangeLoader.cs" />
+    <Compile Include="Controls\CustomScrollControl.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Common\Enums.cs" />
+    <Compile Include="Common\ScrollPositionChangedEventArgs.cs" />
+    <Compile Include="Controls\CellSizeDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Controls\GridContextMenu.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Controls\GridSubPanel.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Common\Position.cs" />
+    <Compile Include="Common\Range.cs" />
+    <Compile Include="Common\RowInfo.cs" />
+    <Compile Include="Common\Selection.cs" />
+    <Compile Include="Common\ValueCellComparer.cs" />
+    <Compile Include="Controls\ComboBoxTyped.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\DropDownCustom.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Controls\TextBoxButtonUITypeEditor.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\TextBoxTyped.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Controls\TextBoxTypedButton.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\TextBoxTypedNumeric.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ConversionModel\CurrencyTypeConverter.cs" />
+    <Compile Include="ConversionModel\DateTimeTypeConverter.cs" />
+    <Compile Include="ConversionModel\IValidator.cs" />
+    <Compile Include="ConversionModel\NumberTypeConverter.cs" />
+    <Compile Include="ConversionModel\PercentTypeConverter.cs" />
+    <Compile Include="ConversionModel\ConvertingObjectEventArgs.cs" />
+    <Compile Include="ConversionModel\ValidatorBase.cs" />
+    <Compile Include="ConversionModel\ValidatorTypeConverter.cs" />
+    <Compile Include="ConversionModel\ValueMapping.cs" />
+    <Compile Include="DataModels\ControlsRepository.cs" />
+    <Compile Include="DataModels\DataModelBase.cs" />
+    <Compile Include="DataModels\DataModelFactory.cs" />
+    <Compile Include="DataModels\EditorComboBox.cs" />
+    <Compile Include="DataModels\EditorControlBase.cs" />
+    <Compile Include="DataModels\EditorDateTime.cs" />
+    <Compile Include="DataModels\EditorNumericUpDown.cs" />
+    <Compile Include="DataModels\EditorTextBox.cs" />
+    <Compile Include="DataModels\EditorTextBoxButton.cs" />
+    <Compile Include="DataModels\EditorTextBoxNumeric.cs" />
+    <Compile Include="DataModels\EditorUITypeEditor.cs" />
+    <Compile Include="DataModels\IDataModel.cs" />
+    <Compile Include="Grids\Grid.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Grids\GridVirtual.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Properties\NamespaceDoc.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="VisualModels\CheckBox.cs" />
+    <Compile Include="VisualModels\Common.cs" />
+    <Compile Include="VisualModels\BitmapCell.cs" />
+    <Compile Include="VisualModels\ExpandCell.cs" />
+    <Compile Include="VisualModels\Header.cs" />
+    <Compile Include="VisualModels\IVisualModel.cs" />
+    <Compile Include="VisualModels\MultiImages.cs" />
+    <Compile Include="VisualModels\PositionedImage.cs" />
+    <Compile Include="VisualModels\VisualModelBase.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Controls\CustomScrollControl.resx">
+      <DependentUpon>CustomScrollControl.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\CellSizeDialog.resx">
+      <DependentUpon>CellSizeDialog.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\GridContextMenu.resx">
+      <DependentUpon>GridContextMenu.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\GridSubPanel.resx">
+      <DependentUpon>GridSubPanel.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Grids\Grid.resx">
+      <DependentUpon>Grid.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Common\Icons\CheckBoxChecked.ico" />
+    <EmbeddedResource Include="Common\Icons\CheckBoxCheckedDisabled.ico" />
+    <EmbeddedResource Include="Common\Icons\CheckBoxCheckedSelected.ico" />
+    <EmbeddedResource Include="Common\Icons\CheckBoxUnChecked.ico" />
+    <EmbeddedResource Include="Common\Icons\CheckBoxUnCheckedDisabled.ico" />
+    <EmbeddedResource Include="Common\Icons\CheckBoxUnCheckedSelected.ico" />
+    <EmbeddedResource Include="Common\Icons\clear.ico" />
+    <EmbeddedResource Include="Common\Icons\copy.ico" />
+    <EmbeddedResource Include="Common\Icons\cut.ico" />
+    <EmbeddedResource Include="Common\Icons\DeleteColumn.ico" />
+    <EmbeddedResource Include="Common\Icons\DeleteRow.ico" />
+    <EmbeddedResource Include="Common\Icons\InsertColumn.ico" />
+    <EmbeddedResource Include="Common\Icons\InsertRow.ico" />
+    <EmbeddedResource Include="Common\Icons\Minus.bmp" />
+    <EmbeddedResource Include="Common\Icons\Minus.ico" />
+    <EmbeddedResource Include="Common\Icons\paste.ico" />
+    <EmbeddedResource Include="Common\Icons\Plus.bmp" />
+    <EmbeddedResource Include="Common\Icons\Plus.ico" />
+    <EmbeddedResource Include="Common\Icons\properties.ico" />
+    <EmbeddedResource Include="Common\Icons\SortDown.ico" />
+    <EmbeddedResource Include="Common\Icons\SortUp.ico" />
+    <EmbeddedResource Include="Controls\ComboBoxTyped.resx">
+      <DependentUpon>ComboBoxTyped.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\DropDownCustom.resx">
+      <DependentUpon>DropDownCustom.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\TextBoxButtonUITypeEditor.resx">
+      <DependentUpon>TextBoxButtonUITypeEditor.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\TextBoxTyped.resx">
+      <DependentUpon>TextBoxTyped.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\TextBoxTypedButton.resx">
+      <DependentUpon>TextBoxTypedButton.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\TextBoxTypedNumeric.resx">
+      <DependentUpon>TextBoxTypedNumeric.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="MEDSUMO.snk" />
+    <None Include="Settings.StyleCop" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Cells\Generic\" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.3.1">
+      <Visible>False</Visible>
+      <ProductName>Windows Installer 3.1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\FcCore\FcCore.csproj">
+      <Project>{561D5482-B030-4389-9C0D-70EFF17B9C8D}</Project>
+      <Name>FcCore</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(ProgramFiles)\MSBuild\StyleCop\v4.7\StyleCop.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
